@@ -1,6 +1,10 @@
 const express = require('express');
 const { downloader, getInfo } = require('./controller');
 
+const sleep = seconds => new Promise(resolve => setTimeout(resolve, seconds * 1000));
+
+const dir = __dirname+'\\downloads\\';
+
 const Router = express.Router();
 
 Router.get('/downloader', async (req, res) => {
@@ -20,7 +24,7 @@ Router.get('/downloader', async (req, res) => {
 
   var { filename } = response;
 
-  await sleep(5);
+  await sleep(10);
   res.download(dir+filename, (error) => {
     if(error) return;
 
