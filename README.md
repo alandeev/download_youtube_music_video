@@ -5,6 +5,8 @@ _Abaixo todas as informações da api de fácil uso, apenas com duas rotas, pode
 # Install Dependencies:
     yarn add express
     yarn add ytdl-core
+    
+    or type: "yarn install" with shell in the page -> this install all dependencies.
 
 # Routers: ( BASE_HOST: localhost:3333 )
     
