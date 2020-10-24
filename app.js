@@ -2,9 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const { downloader } = require('./src/controller');
 
-const sleep = seconds => new Promise(resolve => setTimeout(resolve, seconds * 1000));
-
-const dir = __dirname+'\\downloads\\';
+const dir = __dirname+'\\src\\downloads\\';
 
 const app = express();
 
