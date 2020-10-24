@@ -1,5 +1,6 @@
 # Baixar arquivos de audio/video do youtube atráves de uma api com express
-Api para download de Musicas e Videos no youtube.
+
+_Abaixo todas as informações da api de fácil uso, apenas com duas rotas, podendo baixar e obter informações de video do youtube, de fácil implementação em qualquer aplicação, já que está no formato Api, e só basta dar um GET, e após baixar o arquivo e enviar para o usuario, ele exclui automaticamente do seu computador.
 
 # Install Dependencies:
     yarn add express
