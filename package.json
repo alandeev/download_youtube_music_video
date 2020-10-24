@@ -1,0 +1,13 @@
+{
+  "name": "c3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ytdl-core": "^3.4.2"
+  }
+}
