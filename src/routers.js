@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs')
 const { downloader, getInfo, searchApi } = require('./controller');
 
-const seconds = 5;
+const seconds = 3;
 
 const sleep = seconds => new Promise(resolve => setTimeout(resolve, seconds * 1000));
 
