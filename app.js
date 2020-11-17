@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
-const { downloader } = require('./src/controller');
+
+const port = 3333;
 
 const dir = __dirname+'\\src\\downloads\\';
 
@@ -14,5 +15,5 @@ require('./src/routers')(app); //execution routers
 app.listen(3333, () => { 
   if(!fs.existsSync(dir))
     fs.mkdirSync(dir);
-  console.log("Back-end started ✔");
+  console.log(`Back-end started port: ${port} ✔`);
 })
